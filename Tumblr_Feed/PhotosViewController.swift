@@ -6,6 +6,8 @@
 //  Copyright © 2018 Kerry LEVEILLE. All rights reserved.
 //
 
+
+
 import AlamofireImage
 import UIKit
 
@@ -13,6 +15,7 @@ import UIKit
 class PhotosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    //@IBOutlet weak var tableView: UITableView!
     var posts: [[String: Any]] = []
     var refreshControl: UIRefreshControl!
     
@@ -56,7 +59,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         // Do any additional setup after loading the view.
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(PhotosViewController.didPullToRefresh(_:)), for: .valueChanged)
-        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh!")
+        //refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh!")
         tableView.insertSubview(refreshControl, at: 0)
     }
     
@@ -106,7 +109,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
             let originalSize = photo["original_size"] as! [String: Any]
             let urlString = originalSize["url"] as! String
             let url = URL(string: urlString)
-            cell.photoView.af_setImage(withURL: url!)
+            cell.PhotoImageView.af_setImage(withURL: url!)
             
         }
         
@@ -114,9 +117,6 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         
         return cell
     }
-    
-    
-    
     
     
     
@@ -138,4 +138,3 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
      */
     
 }
-
