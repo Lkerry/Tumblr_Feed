@@ -50,7 +50,7 @@
 		94AD76CD214CC1CA00FD39AB /* Tumblr_FeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tumblr_FeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AD76D1214CC1CA00FD39AB /* Tumblr_FeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tumblr_FeedUITests.swift; sourceTree = "<group>"; };
 		94AD76D3214CC1CA00FD39AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94AD76DF214CC34400FD39AB /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		94AD76DF214CC34400FD39AB /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94AD76E1214CC7E800FD39AB /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		94AD76E3214CC84B00FD39AB /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		9E583B10332AE9702A94492D /* Pods-Tumblr_Feed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tumblr_Feed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tumblr_Feed/Pods-Tumblr_Feed.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +91,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9454E2E8214E306B00A4C683 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		94AD76A5214CC1C900FD39AB = {
 			isa = PBXGroup;
 			children = (
@@ -117,12 +124,13 @@
 		94AD76B0214CC1C900FD39AB /* Tumblr_Feed */ = {
 			isa = PBXGroup;
 			children = (
+				9454E2E8214E306B00A4C683 /* View Controllers */,
 				94AD76B1214CC1C900FD39AB /* AppDelegate.swift */,
+				94AD76E1214CC7E800FD39AB /* PhotosViewController.swift */,
 				94AD76B5214CC1C900FD39AB /* Main.storyboard */,
 				94AD76B8214CC1CA00FD39AB /* Assets.xcassets */,
 				94AD76BA214CC1CA00FD39AB /* LaunchScreen.storyboard */,
 				94AD76BD214CC1CA00FD39AB /* Info.plist */,
-				94AD76E1214CC7E800FD39AB /* PhotosViewController.swift */,
 				94AD76E3214CC84B00FD39AB /* PhotoCell.swift */,
 			);
 			path = Tumblr_Feed;
